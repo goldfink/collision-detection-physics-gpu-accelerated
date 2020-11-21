@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <title>HTML5 Game Development Tutorial | Spicy Yoghurt</title>
+    <meta name="description" content="HTML5 game development tutorial">
+    <meta name="author" content="Spicy Yoghurt">
+    <script src="https://unpkg.com/gpu.js@latest/dist/gpu-browser.min.js"></script>
+
+    <script type="text/javascript" src="js/GameWorld.js"></script>
+    <script type="text/javascript" src="js/GameObject.js"></script>
+    <script type="text/javascript" src="js/Square.js"></script>
+</head>
+
+<body>
+    <canvas id="canvas" width="750" height="400" style="border:1px solid lightgrey;">
+        Your browser does not support the HTML5 canvas tag.
+    </canvas>
+    <script>
+        // Listen to the onLoad event, then create a game world
+        window.onload = function (){
+            var gameWorld = new GameWorld('canvas');
+        }
+    </script>
+</body>
+
+</html>
